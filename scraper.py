@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 for page in range(1,4):
-    response = requests.get(f'https://www.bbc.com/zhongwen/trad/topics/cq8nqywy37yt/page/{page}')
+    response = requests.get(f'https://www.bbc.com/zhongwen/trad/topics/c83plve5vmjt/page/{page}')
 
     soup = BeautifulSoup(response.text, 'lxml')
     titles = soup.find_all('span', {'class': 'lx-stream-post__header-text gs-u-align-middle'})
